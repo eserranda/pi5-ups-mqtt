@@ -1,0 +1,7 @@
+# Jangan pernah commit kredensial
+*.env
+!*.env.example
+
+__pycache__/
+*.pyc
+.venv/

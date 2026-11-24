@@ -1,0 +1,14 @@
+[Unit]
+Description=X1202 UPS to MQTT
+After=network-online.target mosquitto.service
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/x1202_mqtt.py
+EnvironmentFile=/etc/x1202-mqtt.env
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
