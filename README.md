@@ -30,7 +30,7 @@ Jika memakai versi `python3-gpiod` 2.x, bagian GPIO di script perlu disesuaikan 
 ## Instalasi
 
 ```bash
-git clone https://github.com/<eserranda>/pi5-ups-mqtt.git
+git clone https://github.com/eserranda/pi5-ups-mqtt.git
 cd pi5-ups-mqtt
 sudo ./install.sh
 ```
